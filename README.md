@@ -3,8 +3,8 @@
 A simple project that uses create-react-app, axios, and a free API to generate random quotes from the Game of Thrones. Styles are written with SCSS.
 
 <div style="display:flex; gap: 20px; flex-wrap: wrap;">
-    <img src="./src/assets/get-got-quote.png" style="height: auto">
-    <img src="./src/assets/get-got-quote-mobile.png" style="height: auto">
+    <img src="./src/assets/get-got-quote.png" style="width:500px; height:auto;">
+    <img src="./src/assets/get-got-quote-mobile.png" style="width:200px; height:auto;">
 </div>
 
 
