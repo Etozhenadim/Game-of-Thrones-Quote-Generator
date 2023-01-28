@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: 'Uncial Antiqua', cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+
+}
+.page {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 50px;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./assets/bg-emilia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (max-width: 600px) {
+        padding: 0;
+        background-image: url("./assets/bg-got.png");
+    }
+}
+
+.quote{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        min-height: 250px;
+        width: 500px;
+        border-radius: 8px;
+        border-image: url("./assets/bg_border.jpg") 30 30 30 30 repeat round;
+        background: #F4E1C4 url(https://www.westeros.org/Graphics/bg_parchment-light.png);
+        background-clip: padding-box;
+        border-style: solid;
+        border-width: 30px;
+    }
+    &__button{
+        align-self: center;
+        display: block;
+        text-align: center;
+        background: #780000;
+        box-shadow: 0px 0px 9px rgb(0 0 0 / 15%);
+        height: 2em;
+        padding: 0px 10px;
+        color: #F1D9B3;
+        text-decoration: none;
+        width: 200px;
+        font-family: 'Uncial Antiqua', cursive;
+    }
+    &__description{
+        &--name{
+            text-align: right;
+        }
+        &--house{
+            text-align: right;
+        }
+        &--sentence{
+            min-height: 60px;
+            text-align: left;
+            font-size: 140%;
+            font-family: 'Alegreya', serif;
+            color: #000000;
+            margin-bottom: 25px;
+        }
+    }
+}
